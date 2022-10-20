@@ -28,6 +28,7 @@ class Blood_Donation(models.Model):
     purpose = models.CharField(max_length=100, null=True, blank=True)
     created = models.DateTimeField(auto_now=True,null=True)
     active = models.BooleanField(null=True, blank=True, default=False)
+    
 
     def __str__(self):
         return self.user.user.username
